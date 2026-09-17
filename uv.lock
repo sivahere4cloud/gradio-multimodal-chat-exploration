@@ -821,6 +821,11 @@ dependencies = [
     { name = "python-dotenv" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "anthropic", specifier = ">=1.6.0" },
@@ -830,6 +835,9 @@ requires-dist = [
     { name = "openai", specifier = ">=3.14.1" },
     { name = "python-dotenv", specifier = ">=1.2.3" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.3.0" }]
 
 [[package]]
 name = "groovy"
